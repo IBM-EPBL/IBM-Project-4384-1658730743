@@ -1,0 +1,103 @@
+body{
+    margin: 0%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main {
+    height: 100vh;
+    background: linear-gradient(45deg, #FC466B, #3F5EFB);
+    
+}
+
+#continer{
+    display: flex;
+  justify-content: center;
+  
+}
+
+#logo-i{
+    background-color: #ffffff08;
+    backdrop-filter: blur(20px);
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 30px;
+    margin: 0 auto;  
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+}
+
+#form{
+    background-color: #ffffff08;
+    backdrop-filter: blur(20px);
+    padding: 50px;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+}
+input {
+    color: #ffffff;
+    background: transparent;
+    width: 300px;
+    height: 25px;
+    padding: 1em;
+    margin-bottom: 2em;
+    border: none;
+    border-radius: 5000px;
+    backdrop-filter: blur(5px);
+    box-shadow: 4px 4px 60px rgba(0,0,0,0.2);
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+}
+::placeholder {
+    padding: 20px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    color: #fff;
+  }
+  input[type=submit] {
+
+    margin: auto;
+             
+    background: linear-gradient(95deg, #FC466B, #3F5EFB);       
+        text-align: center;
+        text-transform: uppercase;
+        transition: 0.5s;
+        background-size: 200% auto;
+        color: white;            
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.123);
+        border-radius: 50px;
+        display: block;
+        height: 50px;
+        width: 200px;
+
+}
+
+input[type=submit]:hover {
+        background-position: right center; /* change the direction of the change here */
+        color: #fff;
+        text-decoration: none;
+}
+
+#heading{
+    margin: auto;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+#text{
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    margin: 10px;
+}
+a{
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+}
+#text-a{
+    color: #000000;
+}
