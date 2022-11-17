@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Upload Image</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="stylesheet.css"
+    />
+
+
+  </head>
+  <body>
+    <div class="main">
+
+        <div id="continer">
+          <a href="/home.html"><span id="logao"><p id="logo-i">BMSZ</p></span></a>
+        </div>
+
+
+        <div id="continer">
+          
+            <div id="form-search">
+                <FORM NAME="myform" ACTION="" METHOD="GET">
+                    <div id="cointiner-inline">
+                        <INPUT TYPE="text" placeholder="Enter Product" id="search-form" NAME="inputbox" VALUE="">
+                        <INPUT TYPE="button" class="button" NAME="button1" Value="Search" onClick="readText(this.form)">
+                        <br>
+                      
+                    </div>
+                    <div id="cointiner-inline">
+                    <input type="file" accept="image/*" id="imageInput" >
+	               </div>
+</div>
+                    
+                </form>  
+            </div>
+        </div>
+<dic class="image-input">
+        <div class="">
+            <div class="box1">
+                <div class="close">
+                    <a href="{{url_for('upload_file',methods='POST')}}" class="closes"></a>
+                </div>
+            </div>
+            <div style="background-color:#ffffff ;margin-top: 25px;font-weight: bold;padding-left: 15px;"><p>Nutrition Facts</p></div>
+            <div class="box2">
+                <div class="bcol">
+                    <table style="width:100%;">
+                        <tr>
+                          <th>Calories</th>
+                          <th>{{data[0]}}{{unit[0]}}</th>
+                        </tr>
+                        <tr>
+                          <th></th>
+                          <th>Daily Value</th>
+                        </tr>
+                        <tr>
+                          <th>Total Fat</th>
+                          <th>{{data[1]}}{{unit[1]}}</th>
+                        </tr>
+                        <tr>
+                            <td>Saturated Fat</td>
+                            <td>{{data[2]}}{{unit[2]}}</td>
+                        </tr>
+                        <tr>
+                            <td>Polyunsaturated Fat</td>
+                            <td>{{data[3]}}{{unit[3]}}</td>
+                        </tr>
+                        <tr>
+                            <td>Monounsaturated Fat</td>
+                            <td>{{data[4]}}{{unit[4]}}</td>
+                        </tr>
+                        <tr>
+                            <th>Cholesterol</th>
+                            <th>{{data[5]}}{{unit[5]}}</th>
+                        </tr>
+                        <tr>
+                            <th>Sodium</th>
+                            <th>{{data[6]}}{{unit[6]}}</th>
+                        </tr>
+                        <tr>
+                            <th>Potassium</th>
+                            <th>{{data[7]}}{{unit[7]}}</th>
+                        </tr>
+                        <tr>
+                            <th>Sugar</th>
+                            <th>{{data[8]}}{{unit[8]}}</th>
+                          </tr>
+                          <tr>
+                            <th>Protein</th>
+                            <th>{{data[9]}}{{unit[9]}}</th>
+                          </tr>
+                          <tr>
+                            <th>Carbohydrates</th>
+                            <th>{{data[10]}}{{unit[10]}}</th>
+                          </tr>
+                          <tr>
+                            <th>Vitamin A</th>
+                            <th>{{data[11]}}{{unit[11]}}</th>
+                          </tr>
+                          <tr>
+                            <th>Vitamin C</th>
+                            <th>{{data[12]}}{{unit[12]}}</th>
+                          </tr>
+                          
+                      </table>
+                </div>
+
+            </div>
+
+       
+
+        
+    </div>   
+  </body>
+</html>
