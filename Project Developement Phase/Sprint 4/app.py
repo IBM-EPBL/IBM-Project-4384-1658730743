@@ -19,13 +19,6 @@ app.config['SECRET_KEY'] = SECRET_KEY
 # Load .env file
 load_dotenv()
 
-# Connect to the Database
-HOSTNAME = os.getenv('HOSTNAME')
-PORT_NUMBER = os.getenv('PORT_NUMBER')
-DATABASE_NAME = os.getenv('DATABASE_NAME')
-USERNAME = os.getenv('USER')
-PASSWORD = os.getenv('PASSWORD')
-GOOGLE_CLIENT_ID = os.getenv('GOOGLE_AUTH_CLIENT_ID')
 
 connection_string = "DATABASE=bludb;HOSTNAME=b0aebb68-94fa-46ec-a1fc-1c999edb6187.c3n41cmd0nqnrk39u98g.databases.appdomain.cloud;PORT=31249;SECURITY=SSL;SSLServerCertificate=DigiCertGlobalRootCA.crt;UID=pbg60128;PWD=KwrdTHmsmD5GqtJn",'',''.format(DATABASE_NAME, HOSTNAME, PORT_NUMBER, USERNAME, PASSWORD)
 conn = db.connect(connection_string, "", "")
@@ -75,14 +68,14 @@ execute_sql(statement=create_table)
 # Helper function to send confirmation mail on sign in
 def send_confirmation_mail(user, email):
     message = Mail(
-        from_email="nutritionassistant854@gmail.com",
+        from_email="nutrition@gmail.com",
         to_emails=email,
         subject="YAYY!! Your Account was created successfully!",
         html_content= "<strong>Account Created with username {0}</strong>".format(user)
     )
     
     try:
-        sg = SendGridAPIClient(os.environ.get('SENDGRID_API_KEY'))
+        sg = SendGridAPIClient(os.environ.get('xxxxxxxxxxxxxxxxx'))
         response = sg.send(message)
         print(response.status_code)
         print(response.body)
